@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AllFiles</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="item_menu_openwith">打开方式</string>
+    <string name="item_menu_share">分享</string>
+    <string name="item_menu_nearby">附件的文件</string>
+    <string name="item_menu_upload">上传</string>
+    <string name="item_menu_bookmark">书签</string>
+    <string name="item_menu_title">标题</string>
+    <string name="item_menu_description">描述</string>
+    <string name="item_menu_detail">详情</string>
+    <string name="item_menu_delete">删除</string>
+
+    <string name="video">video</string>
+    <string name="photo">photo</string>
+    <string name="title_activity_show_photo">ShowPhotoActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="title_activity_photo">PhotoActivity</string>
+
+    <string name="title_activity_garray">GarrayActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

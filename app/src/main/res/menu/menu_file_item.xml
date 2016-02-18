@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item_menu_openwith"
+        android:title="@string/item_menu_openwith"
+        android:orderInCategory="1"/>
+    <item android:id="@+id/item_menu_share"
+        android:title="@string/item_menu_share"
+        android:orderInCategory="2"/>
+    <item android:id="@+id/item_menu_nearby"
+        android:title="@string/item_menu_nearby"
+        android:orderInCategory="3"/>
+    <item android:id="@+id/item_menu_upload"
+        android:title="@string/item_menu_upload"
+        android:orderInCategory="4"/>
+    <item android:id="@+id/item_menu_bookmark"
+        android:title="@string/item_menu_bookmark"
+        android:orderInCategory="5"/>
+    <item android:id="@+id/item_menu_title"
+        android:title="@string/item_menu_title"
+        android:orderInCategory="6"/>
+    <item android:id="@+id/item_menu_description"
+        android:title="@string/item_menu_description"
+        android:orderInCategory="7"/>
+    <item android:id="@+id/item_menu_detail"
+        android:title="@string/item_menu_detail"
+        android:orderInCategory="8"/>
+    <item android:id="@+id/item_menu_delete"
+        android:title="@string/item_menu_delete"
+        android:orderInCategory="9"/>
+</menu>

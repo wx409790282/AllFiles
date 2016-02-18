@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="96dp">
+    <TextView
+        android:id="@+id/item_nametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        style="@style/NormalFontStyle"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_detailtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="detai"
+            android:layout_alignParentLeft="true"
+            style="@style/OtherFontStyle"/>
+        <ImageView
+            android:id="@+id/item_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/describe"
+            android:layout_toRightOf="@+id/item_detailtv"
+            android:layout_marginLeft="30dp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/item_lengthtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_alignParentRight="true"
+            style="@style/OtherFontStyle"/>
+    </RelativeLayout>
+
+</LinearLayout>

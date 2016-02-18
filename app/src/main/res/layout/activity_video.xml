@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.example.wx091.allfiles.activity.VideoActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <SurfaceView
+        android:id="@+id/show_video_sv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:id="@+id/show_video_auto_hide">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_video_title"
+            style="@style/WhiteFontStyle"
+            android:layout_gravity="top|center_horizontal"
+            android:gravity="center"
+            android:background="@color/black_tans"
+            />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:background="@color/black_tans"
+            >
+            <LinearLayout
+                android:id="@+id/show_video_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/show_video_back"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_back" />
+                <Button
+                    android:id="@+id/show_video_play"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_stop" />
+
+                <Button
+                    android:id="@+id/show_video_next"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_next" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/show_video_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/show_video_onplaylength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/WhiteFontStyle"
+                    android:layout_alignParentLeft="true"
+                    android:padding="8dp"/>
+
+                <SeekBar
+                    android:id="@+id/show_video_seekBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/show_video_length"
+                    android:layout_toRightOf="@+id/show_video_onplaylength"/>
+
+                <TextView
+                    android:id="@+id/show_video_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/WhiteFontStyle"
+                    android:layout_alignParentRight="true"
+                    android:padding="8dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
